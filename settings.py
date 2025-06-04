@@ -30,7 +30,7 @@ class SettingsScreen(MDScreen):
         container.bind(minimum_height=container.setter("height"))
 
         # Horizontal row: Dark Mode label + Switch
-        darkmode_row = BoxLayout(orientation="horizontal", size_hint_y=None, height=40, spacing=10)
+        darkmode_row = BoxLayout(orientation="horizontal", size_hint_y=None, height=75, spacing=10)
         darkmode_label = MDLabel(text="Dark Mode", halign="left", size_hint_x=None, width=100)
         self.switch = MDSwitch(active=self.dark_mode)
         self.switch.bind(active=self.toggle_dark_mode)
